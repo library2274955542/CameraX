@@ -1,0 +1,4 @@
+include ':dataCameraX'
+include ':CardCameraX'
+include ':app'
+rootProject.name = "CameraX"

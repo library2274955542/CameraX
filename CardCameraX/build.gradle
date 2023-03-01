@@ -2,7 +2,7 @@ plugins {
     id 'com.android.library'
 }
 apply from:'../CardCameraX/cameraGuard.gradle'
-apply from:'../CardCameraX/cameraGuardJitPack.gradle'
+//apply from:'../CardCameraX/cameraGuardJitPack.gradle'
 android {
     compileSdkVersion 32
 

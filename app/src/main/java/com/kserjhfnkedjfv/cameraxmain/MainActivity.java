@@ -16,8 +16,6 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.kserjhfnkedjfv.camerax.util.CameraConstant;
-import com.kserjhfnkedjfv.camerax.util.CameraParam;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -36,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
     ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
         @Override
         public void onActivityResult(ActivityResult result) {
-            if (result.getResultCode() == RESULT_OK) {
+            /*if (result.getResultCode() == RESULT_OK) {
                 String picturePath = result.getData().getStringExtra(CameraConstant.PICTURE_PATH_KEY);
                 //显示出来
                 img_picture.setVisibility(View.VISIBLE);
                 img_picture.setImageBitmap(BitmapFactory.decodeFile(picturePath));
             } else {
                 Toast.makeText(MainActivity.this, "" + result.getResultCode(), Toast.LENGTH_LONG).show();
-            }
+            }*/
         }
     });
     ActivityResultLauncher<String[]> ps = registerForActivityResult(new ActivityResultContracts.RequestMultiplePermissions(), new ActivityResultCallback<Map<String, Boolean>>() {
@@ -58,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
             }
-            new CameraParam.Builder(MainActivity.this)
+            /*new CameraParam.Builder(MainActivity.this)
                     //.setMaskDimensionRatio("h,8:5")
                     .setShowFocusTips(false)
-                    .build(launcher);
+                    .build(launcher);*/
         }
     });
 

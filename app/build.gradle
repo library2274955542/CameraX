@@ -60,7 +60,8 @@ dependencies {
     implementation 'com.permissionx.guolindev:permissionx:1.4.0'
     implementation 'androidx.activity:activity:1.4.0'
     implementation 'androidx.fragment:fragment:1.4.0'
-    implementation 'com.kse.cardcamerax:cameraLibrary:1.0.0-alpha01'
+//    implementation 'com.github.library2274955542:CameraX:1.0.0-alpha02'
+//    implementation 'com.kse.cardcamerax:cameraLibrary:1.0.0-alpha01'
 //    implementation 'com.wld.mycamerax:cameraLibrary:1.0.0-alpha01'
 
 }

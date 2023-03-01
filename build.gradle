@@ -19,10 +19,11 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-        maven { url '../repository' }
+        maven { url 'https://jitpack.io' }
+        /*maven { url '../repository' }
         maven {
             url 'https://gitee.com/myaar/test2/raw/master/repository'
-        }
+        }*/
     }
 }
 
